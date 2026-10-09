@@ -23,12 +23,13 @@ class Suco extends Bebida {
 
 // Batatas
 abstract class Batata { public abstract String getTamanho(); }
+class BatataPequena extends Batata { public String getTamanho() { return "Batata Pequena"; } }
 class BatataMedia extends Batata { public String getTamanho() { return "Batata Média"; } }
+class BatataGrande extends Batata { public String getTamanho() { return "Batata Grande"; } }
 
 
-// ==========================================
+
 // 2. O ADAPTER (Padroniza os 3 para o Combo)
-// ==========================================
 
 interface ItemDoCombo {
     String getDescricao();
@@ -53,9 +54,7 @@ class BatataAdapter implements ItemDoCombo {
 }
 
 
-// ==========================================
 // 3. O COMBO (Conecta os 3 itens)
-// ==========================================
 
 class Combo {
     private ItemDoCombo lanche;
@@ -77,9 +76,6 @@ class Combo {
 }
 
 
-// ==========================================
-// 4. TESTANDO NO MAIN
-// ==========================================
 
 public class Main {
     public static void main(String[] args) {
