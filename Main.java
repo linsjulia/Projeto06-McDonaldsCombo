@@ -1,15 +1,14 @@
-// ==========================================
-// 1. AS CLASSES DOS PRODUTOS
-// ==========================================
 
 // Lanches
 abstract class Lanche { public abstract String getNome(); }
-class BigMac extends Lanche { 
-    public String getNome() { return "BigMac"; } }
+
+class BigMac extends Lanche { public String getNome() { return "BigMac"; } }
 class Quarteirao extends Lanche { public String getNome() { return "Quarteirão"; } }
+class McFish extends Lanche { public String getNome() { return "McFish"; } }
 
 // Bebidas
 abstract class Bebida { public abstract String getDetalhes(); }
+
 class Refrigerante extends Bebida {
     private int ml;
     public Refrigerante(int ml) { this.ml = ml; }
