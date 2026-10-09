@@ -15,6 +15,12 @@ class Refrigerante extends Bebida {
     public String getDetalhes() { return "Refrigerante " + ml + "ml"; }
 }
 
+class Suco extends Bebida {
+    private int ml;
+    public Suco(int ml) { this.ml = ml; }
+    public String getDetalhes() { return "Suco " + ml + "ml"; }
+}
+
 // Batatas
 abstract class Batata { public abstract String getTamanho(); }
 class BatataMedia extends Batata { public String getTamanho() { return "Batata Média"; } }
