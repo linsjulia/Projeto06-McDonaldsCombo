@@ -1,17 +1,11 @@
 # Padrões Estruturais GoF — Bridge e Adapter
 
-Projeto em JavaScript (Node.js, sem dependências) que demonstra os padrões **Bridge** e **Adapter** em um sistema de combos de fast-food.
+Projeto em JavaScript que demonstra os padrões **Bridge** e **Adapter** em um sistema de combos de fast-food.
 
 Cada combo possui:
 - **Lanche:** Big Mac, Quarteirão ou McFish.
 - **Bebida:** refrigerante ou suco de 300, 500 ou 700 ml.
 - **Batata:** pequena, média ou grande.
-
-## Como executar
-
-```bash
-node app_adaptado.js
-```
 
 O programa imprime cinco combos, alterações em dois deles e um combo com bebida do sistema legado.
 
